@@ -1,0 +1,173 @@
+div h1 {
+    color: #112cc5;
+    text-shadow: 1px 1px 0 #000000;
+    font-family: "Prociono", serif;
+    /* font-weight: 1000; */
+    font-style: normal;
+}
+.round{
+    border-radius: 50px;
+}
+div.h h1 h2 {
+    color: black;
+}
+pre span{
+    color: red;
+}
+
+h2 {
+    color: red;
+    text-shadow: 1px 1px 0 #000000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    position: relative;
+    background-color: #f1997e10;
+
+}
+
+header {
+    background: linear-gradient(#254292, #1495CE) rgb(16, 71, 255);
+    color: #FFF200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+     /* Gradient Hex code
+     top  #254292 
+    bottom #1495CE */
+    /* text #FFF200 */
+}
+
+header img {
+    height: 90px;
+    margin-right: 20px;
+}
+
+#clock {
+    font-size: 16px;
+}
+
+nav {
+    background: #282A35;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a.active {
+    background: #02020254;
+    text-shadow: 0px 0px 5px #dde495e0;
+    box-shadow: 0px 0px 5px #fff;
+    border-radius: 5px;
+
+}
+
+nav a:hover {
+    /* background: #fbff01;
+   
+    /*color: rgb(255, 0, 0); */
+    transition:all  0.7s; 
+    background: #020202;
+    text-shadow: 0px 2px 9px #dde495;
+    box-shadow: 0px 0px 6px #fff;
+    border-radius: 5px;
+
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 35%;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1;
+
+}
+.highlight{
+    background-color: rgba(255, 255, 0, 0.863);
+}
+.code {
+    color: red;
+}
+
+.content-container {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    
+}
+
+.responsive-image {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+pre {
+    background-color: #c5dffd9a;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    overflow-x: auto;
+    color: #333;
+    border: 1px solid #d6c90c3b;
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.425);
+}
+
+footer {
+    background: #302f2f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#clock {
+    font-size: 20px;
+    font-weight: bold;
+    color: yellow;
+    background: #222;
+    padding: 8px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(181, 189, 78);
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+#clock:hover {
+    background: #444;
+}
+
+.my-no{
+    text-decoration: none;
+    color: #fff;
+}
