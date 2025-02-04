@@ -5,13 +5,16 @@ div h1 {
     /* font-weight: 1000; */
     font-style: normal;
 }
-.round{
+
+.round {
     border-radius: 50px;
 }
+
 div.h h1 h2 {
     color: black;
 }
-pre span{
+
+pre span {
     color: red;
 }
 
@@ -26,7 +29,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     position: relative;
-    background-color: #f1997e10;
+    background-color: #f1997e21;
 
 }
 
@@ -38,22 +41,62 @@ header {
     align-items: center;
     padding: 10px 20px;
     text-shadow: 2px 2px 0 rgb(0, 0, 0);
-     /* Gradient Hex code
+    /* Gradient Hex code
      top  #254292 
     bottom #1495CE */
     /* text #FFF200 */
 }
 
 header img {
-    height: 90px;
-    margin-right: 20px;
+    height: 60px;
+    margin-right: 30px;
 }
 
-#clock {
-    font-size: 16px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-nav {
+
+.topnav {
+    /* overflow: hidden; */
+    background-color: #333;
+    position: relative;
+    
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: #04AA6D;
+    color: white;
+    
+}
+
+
+/* nav {
     background: #282A35;
     overflow: hidden;
 }
@@ -78,14 +121,14 @@ nav a.active {
 nav a:hover {
     /* background: #fbff01;
    
-    /*color: rgb(255, 0, 0); */
+    /*color: rgb(255, 0, 0); 
     transition:all  0.7s; 
     background: #020202;
     text-shadow: 0px 2px 9px #dde495;
     box-shadow: 0px 0px 6px #fff;
     border-radius: 5px;
 
-}
+} */
 
 body::before {
     content: "";
@@ -103,9 +146,11 @@ body::before {
     z-index: -1;
 
 }
-.highlight{
+
+.highlight {
     background-color: rgba(255, 255, 0, 0.863);
 }
+
 .code {
     color: red;
 }
@@ -113,8 +158,8 @@ body::before {
 .content-container {
     position: relative;
     z-index: 1;
-    padding: 20px;
-    
+    padding: 10px;
+
 }
 
 .responsive-image {
@@ -145,6 +190,9 @@ footer {
     margin-left: 0px;
     margin-right: 0px;
 }
+.footermar {
+    margin-left:px;
+}
 
 * {
     box-sizing: border-box;
@@ -167,7 +215,28 @@ footer {
     background: #444;
 }
 
-.my-no{
+.my-no {
     text-decoration: none;
     color: #fff;
 }
+
+nav {
+    padding-top: 0rem;
+}
+
+@media screen and (max-width: 780px) {
+    #clock {
+        display: none;
+    }
+   
+}
+@media screen and (min-width: 990px) {
+    #navchap {
+        display: none;
+        
+    }
+
+   
+   
+}
+
