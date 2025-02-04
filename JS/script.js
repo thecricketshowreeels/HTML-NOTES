@@ -10,3 +10,11 @@ function updateClock() {
 }
 setInterval(updateClock, 1000);
 window.onload = updateClock; 
+
+$('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+
+});
