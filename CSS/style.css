@@ -29,7 +29,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     position: relative;
-    background-color: #f1997e21;
+   
 
 }
 
@@ -144,7 +144,7 @@ body::before {
     opacity: 0.3;
     pointer-events: none;
     z-index: -1;
-
+    background-color: rgba(148, 102, 73, 0.336);
 }
 
 .highlight {
@@ -174,7 +174,7 @@ pre {
     padding: 10px;
     border-radius: 5px;
     font-size: 15px;
-    overflow-x: auto;
+    overflow-x:auto;
     color: #333;
     border: 1px solid #d6c90c3b;
     box-shadow: 0 2px 5px rgba(255, 0, 0, 0.425);
@@ -217,12 +217,9 @@ footer {
 
 .my-no {
     text-decoration: none;
-    color: #fff;
+    color: #058cfa;
 }
 
-nav {
-    padding-top: 0rem;
-}
 
 @media screen and (max-width: 780px) {
     #clock {
