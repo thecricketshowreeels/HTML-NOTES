@@ -90,7 +90,7 @@ body {
 }
 
 .active {
-    background-color: #04AA6D;
+    background: linear-gradient(#254292af, #0ea1e0a2) rgba(16, 72, 255, 0.671);
     color: white;
     
 }
@@ -163,7 +163,7 @@ body::before {
 }
 
 .responsive-image {
-    max-width: 80%;
+    max-width: 70%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -235,5 +235,10 @@ footer {
 
    
    
+}
+.decnone{
+    text-decoration: none;
+    font-style: normal;
+    
 }
 
