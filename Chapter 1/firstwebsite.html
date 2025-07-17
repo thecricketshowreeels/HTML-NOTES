@@ -2,30 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Creating First Website</title>
-    <link rel="icon" type="image/x-icon" href="../images/images-01.png">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="../images/images-01.png" />
+    <link rel="stylesheet" href="../CSS/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
 </head>
 
 <body>
     <!-- Comments  -->
     <header>
-        <img src="../images/images.png" alt="Logo" class="round" />
+        <a href="https://www.google.com/search?q=UMME+SALMA+COMPUTER+TRAINING+CENTRE" target="_blank"><img
+                src="../images/images.png" alt="Logo" class="round" /></a>
         <h1>UMME SALMA COMPUTER TRAINING CENTRE</h1>
         <div id="clock"></div>
     </header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <div id="navchap"> Chapters & Practice Sets</div>
+            <div id="navchap">Chapters & Practice Sets</div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="../index.html">Chapter 0</a>
+                        <a class="nav-link" aria-current="page" href="../index.html">Chapter 0</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="../Chapter 1/firstwebsite.html">Chapter 1</a>
@@ -42,8 +41,8 @@
                         <a class="nav-link" href="../Chapter 1/practiceset1.html">Practice Set 1</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="../Chapter 2/htmltags.html" tabindex="-1"
-                            aria-disabled="true">Chapter 2</a>
+                        <a class="nav-link" href="../Chapter 2/htmltags.html" tabindex="-1" aria-disabled="true">Chapter
+                            2</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../Chapter 2/practiceset2.html">Practice Set 2</a>
@@ -52,7 +51,7 @@
                         <a class="nav-link" href="../Chapter 3/creatingpagelayout.html">Chapter 3</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="../Chapter 3/practiceset3.html">Practice Set 3</a>
+                        <a class="nav-link" href="../Chapter 3/practiceset3.html">Practice Set 3</a>
                     </li>
                 </ul>
             </div>
@@ -60,150 +59,147 @@
     </nav>
 
     <div class="content-container">
+        <h1 style="text-align: center">Chapter 1 - Creating First Website</h1>
 
-
-        <h1 style="text-align: center;">Chapter 1 - Creating First Website</h1>
-
-
-
-        <p>We start building a website by creating a file named <i> index.html</i>. <i> <b>index.html </b></i> is a
-            special filename that is presented when the website root address is typed.</p>
-
+        <p>
+            We start building a website by creating a file named <i> index.html</i>.
+            <i> <b>index.html </b></i> is a special filename that is presented when
+            the website root address is typed.
+        </p>
         <h2 id="boilerplate">A Basic HTML Page (Boiler Plate Code)</h2>
-        <pre class="language-markup" tabindex="0"><code class="language-markup">
-&lt;!DOCTYPE html&gt;        <span class="code">&rarr; Specifies this is an HTML5 document </span>
-&lt;html&gt;        <span class="code">&rarr; Root of an HTML page </span>
-    &lt;head&gt;        <span class="code">&rarr; Contains page metadata </span>
-        &lt;title&gt;Document&lt;/title&gt;        <span class="code">&rarr; Contains title </span>
-    &lt;/head&gt;        <span class="code">&rarr; Head closing tag</span>
-    &lt;body&gt;        <span class="code">&rarr; The main body of the page (rendered by browser) </span>
-        &lt;h1&gt; Heading &lt;/h1&gt;        <span class="code">&rarr; Heading </span>
-    &lt;/body&gt;        <span class="code">&rarr; Body closing tag</span>
-&lt;/html&gt;        <span class="code">&rarr; HTML closing tag </span>
+        <pre class="language-markup" tabindex="0"><code class="language-markup"><span class="grey">&lt;</span><span class="dark-blue">!DOCTYPE html</span><span class="grey">&gt;</span>        <span class="code">&rarr; Specifies this is an HTML5 document </span>
+<span class="grey">&lt;</span><span class="dark-blue">html</span><span class="grey">&gt;</span>        <span class="code">&rarr; Root of an HTML page </span>
+    <span class="grey">&lt;</span><span class="dark-blue">head</span><span class="grey">&gt;</span>        <span class="code">&rarr; Contains page metadata </span>
+        <span class="grey">&lt;</span><span class="dark-blue">title</span><span class="grey">&gt;</span>Document<span class="grey">&lt;/</span><span class="dark-blue">title</span><span class="grey">&gt;</span>        <span class="code">&rarr; Contains title </span>
+    <span class="grey">&lt;/</span><span class="dark-blue">head</span>&gt;</span>        <span class="code">&rarr; Head closing tag</span>
+    <span class="grey">&lt;</span><span class="dark-blue">body</span><span class="grey">&gt;</span>        <span class="code">&rarr; The main body of the page (rendered by browser) </span>
+        <span class="grey">&lt;</span><span class="dark-blue">h1</span><span class="grey">&gt;</span> Heading <span class="grey">&lt;/</span><span class="dark-blue">h1</span><span class="grey">&gt;</span>        <span class="code">&rarr; Heading </span>
+    <span class="grey">&lt;/</span><span class="dark-blue">body</span><span class="grey">&gt;</span>        <span class="code">&rarr; Body closing tag</span>
+<span class="grey">&lt;/</span><span class="dark-blue">html</span><span class="grey">&gt;</span>        <span class="code">&rarr; HTML closing tag </span>
 </code></pre>
 
         <!-- <img src="/screenshot-1724147176058.png" alt="Screenshot explaining boilerplate code structure"  /> -->
 
         <h3>Visualization of an HTML Document</h3>
         <img src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/html-page-structure/html-tag-structure-image.png"
-            alt="Visualization of an HTML Document" height="300">
+            alt="Visualization of an HTML Document" height="300" />
 
-        <p>A tag is like a container for either content or other HTML tags. Opening Tag + Content + Closing Tag = HTML
-            Element.</p>
-
-        <img id="myImg" src="../images/how html homeworks.png" alt="How HTML Works?" class="responsive-image" />
-        <hr>
-
+        <p>
+            A tag is like a container for either content or other HTML tags. Opening
+            Tag + Content + Closing Tag = HTML Element.
+        </p>
+        <img src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/html-tags/representation-of-html-tags.png"
+            class="responsive-image" alt="HTML Element Representation" />
+        <hr />
         <h2 id="notes">Important Notes</h2>
         <ul>
             <li>HTML is the parent of Head and Body tags.</li>
-            <li>Most HTML elements have opening and closing tags with content in between.</li>
-            <li>Some HTML tags have no content; these are called empty elements, e.g., &lt;br&gt;.</li>
+            <li>
+                Most HTML elements have opening and closing tags with content in
+                between.
+            </li>
+            <li>
+                Some HTML tags have no content; these are called empty elements, e.g.,
+                &lt;br&gt;.
+            </li>
             <li>We can either use .htm or .html extension.</li>
-            <li>You can use "Inspect Element" or "View Page Source" in Chrome to look into a website's HTML code.</li>
+            <li>
+                You can use "Inspect Element" or "View Page Source" in Chrome to look
+                into a website's HTML code.
+            </li>
         </ul>
-
-        <img src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/html-tags/representation-of-html-tags.png"
-            class="responsive-image" alt="HTML Tag">
-        <hr>
+        <img id="myImg" src="../images/how html homeworks.png" alt="How HTML Works?" class="responsive-image" />
+        <hr />
 
         <h2 id="comments">Comments In HTML</h2>
-        <p>Comments in HTML are used to making them useful for adding notes or explanations in the code. Ignored by the
-            browser.</p>
-        <pre><code>&lt;!-- Comments --&gt;</code></pre>
-        <hr>
+        <p>
+            Comments in HTML are useful for adding notes or explanations in the
+            code. They are ignored by the browser.
+        </p>
+        <pre class="green"><code>&lt;!-- This is a comment --&gt;</code></pre>
+        <hr />
 
         <h2 id="case-sensitivity">Case Sensitivity</h2>
-        <p>HTML is not a case-sensitive language. &lt;H1&gt; and &lt;h1&gt; tags are the same.</p>
-        <hr>
-
+        <p>
+            HTML is not a case-sensitive language. <code>&lt;H1&gt;</code> and
+            <code>&lt;h1&gt;</code> tags are the same.
+        </p>
+        <hr />
         <h2>Container and Empty Tags In HTML</h2>
         <h3>1. Container Tags (Paired Tags)</h3>
         <ul>
-            <li><strong>Opening Tag</strong>: The opening tag starts with <code>&lt;</code> and ends with
-                <code>&gt;</code>. For example, <code>&lt;p&gt;</code>.</li>
-            <li><strong>Closing Tag</strong>: The closing tag also starts with <code>&lt;</code> but includes a forward
-                slash <code>/</code> before the tag name, and ends with <code>&gt;</code>. For example,
-                <code>&lt;/p&gt;</code>.</li>
+            <li>
+                <strong>Opening Tag</strong>: The opening tag starts with
+                <code>&lt;</code> and ends with <code>&gt;</code>. For example,
+                <code>&lt;p&gt;</code>.
+            </li>
+            <li>
+                <strong>Closing Tag</strong>: The closing tag also starts with
+                <code>&lt;</code> but includes a forward slash <code>/</code> before
+                the tag name, and ends with <code>&gt;</code>. For example,
+                <code>&lt;/p&gt;</code>.
+            </li>
         </ul>
 
         <h4>Examples:</h4>
         <ul>
-            <li>Paragraphs:
-                <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+            <li>
+                Paragraph:
+                <pre><code><span class="grey">&lt;</span><span class="dark-blue">p</span><span class="grey">&gt;</span>This is a paragraph.<span class="grey">&lt;/</span><span class="dark-blue">p</span><span class="grey">&gt;</span></code></pre>
             </li>
-            <li>Headings:
-                <pre><code>&lt;h1&gt;This is a heading.&lt;/h1&gt;</code></pre>
+            <li>
+                Heading:
+                <pre><code><span class="grey">&lt;</span><span class="dark-blue">h1</span><span class="grey">&gt;</span>This is a heading.<span class="grey">&lt;/</span><span class="dark-blue">h1</span><span class="grey">&gt;</span></code></pre>
             </li>
         </ul>
 
         <h3>2. Empty Tags (Unpaired Tags)</h3>
         <ul>
-            <li><strong>Self-Closing Tag</strong>: A self-closing tag starts with <code>&lt;</code> and ends with
-                <code>/&gt;</code>. For example, <code>&lt;img /&gt;</code> or <code>&lt;br&gt;</code>.</li>
+            <li>
+                <strong>Self-Closing Tag</strong>: A self-closing tag starts with
+                <code>&lt;</code> and ends with <code>/&gt;</code>. For example,
+                <code>&lt;img /&gt;</code> or <code>&lt;br&gt;</code>.
+            </li>
         </ul>
 
         <h4>Examples of self-closing tags:</h4>
         <ul>
-            <li>Line Break:
-                <pre><code>&lt;br&gt;</code></pre>
+            <li>
+                Line Break:
+                <pre><code><span class="grey">&lt;</span><span class="dark-blue">br</span><span class="grey">&gt;</span>
+</code></pre>
             </li>
-            <li>Horizontal Rule:
-                <pre><code>&lt;hr&gt;</code></pre>
+            <li>
+                Horizontal Rule:
+                <pre><code><span class="grey">&lt;</span><span class="dark-blue">hr</span><span class="grey">&gt;</span></code></pre>
             </li>
-            <li>Image:
-                <pre><code>&lt;img src="image.jpg" alt="An example image"&gt;</code></pre>
+            <li>
+                Image:
+                <pre><code><span class="grey">&lt;</span><span class="dark-blue">img</span> <span class="light-blue">src</span>=<span class="dark-red">"image.jpg"</span> <span class="light-blue">alt</span>=<span class="dark-red">"An example image"</span><span class="grey">&gt;</span></code></pre>
             </li>
         </ul>
-        <hr>
+        <hr />
 
-
-        </a>
         <!-- Trigger the Modal -->
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
 
-  <!-- The Close Button -->
-  <span class="close">&times;</span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
 
-  <!-- Modal Content (The Image) -->
-  <img class="modal-content" id="img01">
-
-  <!-- Modal Caption (Image Text) -->
-  <div id="caption"></div>
-</div>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
     </div>
-
     <footer>
-        <p>&copy; 2024 Umme Salma Computer Training Centre. All rights reserved.</p>
-        <p>&#128222; Contact: <a href="tel:8479998614" class="my-no">8479998614</a></p>
+        <p>&copy; 2025 Umme Salma Computer Training Centre. All rights reserved.</p>
+        <p>&#128222; Rehan Sir: <a href="tel:8479998614" class="my-no">8479998614</a></p>
     </footer>
     <script src="../JS/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-        <script>// Get the modal
-            var modal = document.getElementById("myModal");
-            
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function(){
-              modal.style.display = "block";
-              modalImg.src = this.src;
-              captionText.innerHTML = this.alt;
-            }
-            
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-            
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-              modal.style.display = "none";
-            }</script>
-
 </body>
 
 </html>
