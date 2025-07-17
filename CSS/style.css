@@ -8,6 +8,12 @@ div h1 {
 
 .round {
     border-radius: 50px;
+    border: 2px solid #fff200;
+    transition: border 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+
+.round:hover {
+    border: 2px solid #0ea5e9;
 }
 
 div.h h1 h2 {
@@ -29,9 +35,9 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     position: relative;
-   
-
+ 
 }
+
 
 header {
     background: linear-gradient(#254292, #1495CE) rgb(16, 71, 255);
@@ -41,15 +47,17 @@ header {
     align-items: center;
     padding: 10px 20px;
     text-shadow: 2px 2px 0 rgb(0, 0, 0);
+     transition: all 0.3s ease-in-out;
     /* Gradient Hex code
      top  #254292 
     bottom #1495CE */
-    /* text #FFF200 */
+    /* text #FFF200 */  
 }
 header:hover{
-    background: linear-gradient(#3162ea79, #0ea1e0a2) rgba(16, 72, 255, 0.671);
-    color: #FFF200;
-    transition: ease-out 1s;
+   background: linear-gradient(#0d2c80, #17a8e6) rgb(85, 123, 247);
+    color: #ffffff;
+         transition: all 0.3s ease-in-out;
+
 }
 
 header img {
@@ -82,7 +90,7 @@ body {
 }
 
 .topnav a.icon {
-    background: black;
+    background: rgb(0, 0, 0);
     display: block;
     position: absolute;
     right: 0;
@@ -92,27 +100,49 @@ body {
 .topnav a:hover {
     background-color: #ddd;
     color: black;
-        transition:all  0.7s; 
+         background: linear-gradient(hsl(55, 82%, 87%), #b3e7fd), rgb(249, 249, 251) !important;
+padding: 10px 12px;
+            transition:ease-in-out  0.9s; 
+            
+        
 }
 
 .active {
-    background:linear-gradient(#99b6087d,#FFF200) ;
+    background: linear-gradient(#99b6087d, #FFF200);
     color: white;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+
+}               
+.navbar {
+    background: #333;
+    overflow: hidden;
+}       
+
+.active:hover{
+        background: linear-gradient(hsl(55, 82%, 87%), #b3e7fd), rgb(249, 249, 251) !important;
+border-radius: 5px;
+    padding: 10px 12px;
+}
+.nav-item:hover  {
     
+    text-decoration: none;
+    padding: 5px 7px;
+    background: linear-gradient(hsl(55, 82%, 87%), #b3e7fd), rgb(249, 249, 251) !important;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.7s; 
 }
 
-
-.active:hover {
-    background: linear-gradient(#3162ea79, #0ea1e0a2) rgba(16, 72, 255, 0.671);
-    color: #FFF200;
-    transition: ease-out 0.7s;
-    
-}
-
-.active {
-    transition: background-color 0.9s ease-out, color 0.9s ease-out;
-}
-
+/* .nav-item .nav-link:hover{
+    color: #cd0404;
+    text-decoration: none;
+    padding: 10px 12px;
+    background: linear-gradient(hsl(55, 82%, 87%), #b3e7fd), rgb(249, 249, 251) !important;
+    border-radius: 5px;
+    display: inline-block;
+    transition:all  0.7s; 
+} */
 
 /* nav {
     background: #282A35;
@@ -197,7 +227,24 @@ pre {
     border: 1px solid #d6c90c3b;
     box-shadow: 0 2px 5px rgba(255, 0, 0, 0.425);
 }
-
+.dark-blue{
+color:#004be1;
+}
+.dark-red {
+    color:rgb(192, 52, 6);
+}
+.light-blue {
+    color:rgb(17, 153, 221);
+}
+.red {
+    color: red;
+}
+.grey {
+    color: grey;
+}
+.green{
+    color: green;
+}
 footer {
     background: #302f2f;
     color: white;
@@ -226,18 +273,25 @@ footer {
     box-shadow: 0 0 15px rgb(181, 189, 78);
     letter-spacing: 1px;
     display: inline-block;
-    transition: background 0.3s ease;
+    transition: background 0.5s cubic-bezier(0.4,0,0.2,1), color 0.5s cubic-bezier(0.4,0,0.2,1);
 }
 
 #clock:hover {
     background: #444;
+     box-shadow: 0 0 20px rgb(220, 232, 64);
 }
 
 .my-no {
     text-decoration: none;
     color: #058cfa;
-}
+    transition: all 0.3s ease-in-out;
 
+}
+.my-no:hover {
+    text-decoration: none;
+    font-size: large;
+    transition: all 0.3s ease-in-out;
+}
 
 @media screen and (max-width: 780px) {
     #clock {
@@ -267,6 +321,16 @@ footer {
   }
   
   #myImg:hover {opacity: 0.7;}
+  div img:hover{
+    opacity :0.7;
+    transition: 0.3s;
+    padding: 7px;
+  }
+  div img {
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
   
   /* The Modal (background) */
   .modal {
@@ -287,9 +351,10 @@ footer {
   .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
+    width: 50%;
     max-width: 700px;
-    margin-top: 15%;
+    margin-top: 10vh;
+    border-radius: 20px;
   }
   
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -315,27 +380,11 @@ footer {
     to {transform:scale(1)}
   }
   
-  /* The Close Button */
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
+    
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 700px){
     .modal-content {
       width: 100%;
     }
   }
+
