@@ -1,124 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Creating A Page Layout</title>
-    <link rel="icon" type="image/x-icon" href="../images/images-01.png">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creating A Page Layout | Umme Salma Computer Training Centre</title>
+  <link rel="icon" type="image/x-icon" href="../images/images-01.png">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-    <style>
-     b
-     {
-       color: red;
-     }
-    </style>
 
-  </head>
+  <style>
+    b {
+      color: red;
+    }
+  </style>
+
+</head>
 
 <body>
-  <!-- Comments  -->
+  <!-- Header -->
   <header>
-    <img src="../images/images.png" alt="Logo" class="round" />
+    <a href="https://www.google.com/search?q=UMME+SALMA+COMPUTER+TRAINING+CENTRE" target="_blank">
+      <img src="../images/images.png" alt="Logo" class="round" />
+    </a>
     <h1>UMME SALMA COMPUTER TRAINING CENTRE</h1>
     <div id="clock"></div>
   </header>
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <div id="navchap"> Chapters & Practice Sets</div>
+      <div id="navchap">Chapters & Practice Sets</div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="../index.html">Chapter 0</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Chapter 1/firstwebsite.html">Chapter 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Chapter 1/practiceset1.html">Practice Set 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="../Chapter 2/htmltags.html" tabindex="-1" aria-disabled="true">Chapter 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Chapter 2/practiceset2.html">Practice Set 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="../Chapter 3/creatingpagelayout.html">Chapter 3</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Chapter 3/practiceset3.html">Practice Set 3</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="../index.html">Chapter 0</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Chapter 1/firstwebsite.html">Chapter 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Chapter 1/practiceset1.html">Practice Set 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Chapter 2/htmltags.html">Chapter 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Chapter 2/practiceset2.html">Practice Set 2</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page"
+              href="../Chapter 3/creatingpagelayout.html">Chapter 3</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Chapter 3/practiceset3.html">Practice Set 3</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  
-    <div class="content-container">
-  
-        
-            <h1 style="text-align: center;">Chapter 3 - Creating A Page Layout</h1> 
+  <div class="content-container">
+    <h1 class="text-center">Chapter 3 - Creating A Page Layout</h1>
     <hr />
     <p>
-     
-Using the correct tags in the right places improves page layout, enhances search engine indexing, and provides a better user experience.<br />
-We use the following tags to achieve this: 
+      Using the correct tags in the right places improves page layout, enhances search engine indexing, and provides a
+      better user experience.<br />
+      We use the following tags to achieve this:
     </p>
     <pre>
-<code>&lt;header&gt; This is a header &lt;/header&gt;</code><br>
-<code>&lt;main&gt; This is Main &lt;/main&gt;</code><br>
-<code>&lt;footer&gt; This is footer &lt;/footer&gt;</code><br>
+<code><span class="grey">&lt;</span><span class="dark-blue">header</span><span class="grey">&gt;</span> This is a header <span class="grey">&lt;/</span><span class="dark-blue">header</span><span class="grey">&gt;</span></code>
+<code><span class="grey">&lt;</span><span class="dark-blue">main</span><span class="grey">&gt;</span> This is Main <span class="grey">&lt;/</span><span class="dark-blue">main</span><span class="grey">&gt;</span></code>
+<code><span class="grey">&lt;</span><span class="dark-blue">footer</span><span class="grey">&gt;</span> This is footer <span class="grey">&lt;/</span><span class="dark-blue">footer</span><span class="grey">&gt;</span></code>
 </pre>
     <p>Inside the main tag, we insert the following tags:</p>
     <pre class="no">
-&lt;main&gt;        <span class="code">&rarr; The main opening tag</span>
-&lt;section&gt;     <span class="code">&rarr; A page section</span>
-&lt;article&gt;     <span class="code">&rarr; A self-contained content</span>
-&lt;aside&gt;       <span class="code">&rarr; Content aside from the main content (e.g., ads)</span>
-&lt;/main&gt;       <span class="code">&rarr; The main closing tag</span>
-    </pre>
+<span class="grey">&lt;</span><span class="dark-blue">main</span><span class="grey">&gt;</span>        <span class="code">&rarr; The main opening tag</span>
+<span class="grey">&lt;</span><span class="dark-blue">section</span><span class="grey">&gt;</span>     <span class="code">&rarr; A page section</span>
+<span class="grey">&lt;</span><span class="dark-blue">article</span><span class="grey">&gt;</span>     <span class="code">&rarr; A self-contained content</span>
+<span class="grey">&lt;</span><span class="dark-blue">aside</span><span class="grey">&gt;</span>       <span class="code">&rarr; Content aside from the main content (e.g., ads)</span>
+<span class="grey">&lt;/</span><span class="dark-blue">main</span><span class="grey">&gt;</span>       <span class="code">&rarr; The main closing tag</span>
+</pre>
     <p>
-      Creating a page like this is not necessary, but it creates a readable and
-      structured layout. <br />
+      Creating a page like this is not necessary, but it creates a readable and structured layout.<br />
       Also, these tags are useful for SEO.
     </p>
     <hr />
     <h2>Link Attributes</h2>
     <pre>
-<code>&lt;a <span>href</span>="URL"&gt; Contact &lt;/a&gt;</code> &rarr; <b>Contact page opens in the same tab</b> </pre>
-    <br />
-<pre><code>&lt;a <span>href</span>="URL" target="_blank"&gt; Contact &lt;/a&gt;</code> &rarr;<b> Opens in a new tab</b></pre>
+<code><span class="grey">&lt;</span><span class="dark-blue">a</span> <span class="light-blue">href</span><span class="dark-red">="URL"</span><span class="grey">&gt;</span>Contact<span class="grey">&lt;/</span><span class="dark-blue">a</span><span class="grey">&gt;</span></code> &rarr; <b>Contact page opens in the same tab</b>
+<code><span class="grey">&lt;</span><span class="dark-blue">a</span> <span class="light-blue">href</span><span class="dark-red">="URL"</span> <span class="light-blue">target</span><span class="dark-red">="_blank"</span><span class="grey">&gt;</span>Contact<span class="grey">&lt;/</span><span class="dark-blue">a</span><span class="grey">&gt;</span></code> &rarr; <b>Opens in a new tab</b>
+</pre>
     <p>
-      We can put any content inside an anchor tag (images, headings, etc. are
-      all allowed).
+      We can put any content inside an anchor tag (images, headings, etc. are all allowed).
     </p>
     <p>
-      If the page is inside a directory, we need to make sure that we link to
-      the correct page.
+      If the page is inside a directory, we need to make sure that we link to the correct page.
       <b>Same applies to the img tag as well.</b>
     </p>
     <h4>We can add links to images like this:</h4>
     <pre>
-<code>&lt;a <span>href</span> </span>="URL"&gt; &lt;img src=".img" height="50"&gt; &lt;/a&gt;</code> &rarr; <span class="code">Width will set automatically</span>
+<code><span class="grey">&lt;</span><span class="dark-blue">a</span> <span>href</span><span class="dark-red">="URL"</span><span class="grey">&gt;</span> <span class="grey">&lt;</span><span class="red">img</span> <span class="light-blue">src</span><span class="dark-red">="img.png"</span> <span class="light-blue">height</span><span class="dark-red">="50"</span><span class="grey">&gt;</span> <span class="grey">&lt;/</span><span class="dark-blue">a</span><span class="grey">&gt;</span></code> &rarr; <span class="code">Width will set automatically</span>
 </pre>
     <hr />
     <h2>The Div Tag</h2>
     <div>
       <p>
-        The div tag is often used as a container for other elements. Div is a
-        block-level element. <u class="highlight">Block-level elements always take full width.</u>
+        The div tag is often used as a container for other elements. Div is a block-level element.
+        <u class="highlight">Block-level elements always take full width.</u>
       </p>
-      <pre>&lt;div&gt;  &lt;/div&gt;</pre>
+      <pre><span class="grey">&lt;</span><span class="dark-blue">div</span><span class="grey">&gt;</span>  <span class="grey">&lt;/</span><span class="dark-blue">div</span><span class="grey">&gt;</span></pre>
     </div>
     <hr />
     <h2>The Span Tag</h2>
@@ -126,58 +110,28 @@ We use the following tags to achieve this:
       <p>
         The span tag is an inline container. <u class="highlight">It takes the required width.</u>
       </p>
-      <pre>&lt;span&gt;  &lt;/span&gt;</pre>
+      <pre><span class="grey">&lt;</span><span class="dark-blue">span</span><span class="grey">&gt;</span>  <span class="grey">&lt;/</span><span class="dark-blue">span</span><span class="grey">&gt;</span></pre>
     </span>
     <hr />
     <h2>Inline & Block Level Elements</h2>
-    <img
-    id="myImg" 
-    src="../images/inline-block-image.png"
-      alt="Block & Inline Tags" height="350"
-    />
+    <img id="myImg" src="../images/inline-block-image.png" alt="Block & Inline Tags" height="350"
+      class="responsive-image modal-img" style="cursor:pointer;" />
     <hr>
-    <!-- Trigger the Modal -->
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- The Close Button -->
-  <span class="close">&times;</span>
-
-  <!-- Modal Content (The Image) -->
-  <img class="modal-content" id="img01">
-
-  <!-- Modal Caption (Image Text) -->
-  <div id="caption"></div>
-</div>
+    <!-- Modal -->
+    <div id="myModal" class="modal" tabindex="-1" aria-modal="true" role="dialog" aria-labelledby="caption">
+      <img class="modal-content" id="img01" alt="Modal Image">
+      <div id="caption"></div>
     </div>
-    <footer>
-      <p>&copy; 2024 Umme Salma Computer Training Centre. All rights reserved.</p>
-      <p>&#128222; Contact: <a href="tel:8479998614" class="my-no">8479998614</a></p>
-    </footer>
-    <script src="../JS/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  </div>
+  <footer>
+    <p>&copy; 2025 Umme Salma Computer Training Centre. All rights reserved.</p>
+    <p>&#128222; Rehan Sir: <a href="tel:8479998614" class="my-no">8479998614</a></p>
+  </footer>
+  <script src="../JS/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-    <script>// Get the modal
-        var modal = document.getElementById("myModal");
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("myImg");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img.onclick = function(){
-          modal.style.display = "block";
-          modalImg.src = this.src;
-          captionText.innerHTML = this.alt;
-        }
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-          modal.style.display = "none";
-        }</script>
-  </body>
+
+</body>
+
 </html>
